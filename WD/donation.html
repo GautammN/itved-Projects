@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam|Kavoon|Josefin+Sans">
+	<link rel="stylesheet" href="donation.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">Orphanage Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        <a class="nav-link" href="adoption.html">Adoption Form</a>
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+            <li><a class="dropdown-item" href="gallery-video.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <a class="nav-link" href="donation.html">Donation & Support</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<h3>Orphanage Support</h3>
+			<br>
+			<img src="assets/images/img5.jpg" class="img-fluid">
+			<p>"We request you to join our hands and keep supporting our efforts" </p>
+			<ul>
+			<li>Presently, 25 girls in Balgruh, between the age group of 6-18 years, Orphans & Semi-Orphans.</li>
+			<li>Higher education and vocational skills training even after the beneficiaries leave the organization.</li>
+			<li>Utmost care and Empathy & Healthy and Competitive Environment.</li>
+			</ul>
+		</div>
+
+		<div class="col-6">
+			<h3>Payment Details</h3>
+			<br>
+			<div class="card">
+				<div class="card-body">
+					<form class="row g-3" action="home.html">
+						<div class="col-12">
+						<label for="inputName" class="form-label">Name</label>
+						<input type="text" class="form-control" id="inputName" required>
+						</div>
+						<div class="col-12">
+							<label for="inputAmount" class="form-label">Amount</label>
+							<div class="input-group">
+								<span class="input-group-text">&#8377;</span>
+								<input type="text" class="form-control" id="inputAmount" pattern="\d*" required>
+							</div>
+						</div>
+						<div class="col-12">
+						<label for="inputEmail" class="form-label">Email</label>
+						<input type="email" class="form-control" id="inputEmail" required>
+						</div>
+						<div class="col-12">
+						<label for="inputContact" class="form-label">Contact</label>
+						<div class="input-group">
+						<span>
+						<select class="form-select" id="contactOption">
+							<option>+91</option>
+							<option>+96</option>
+						</select>
+						</span>
+						<input type="text" class="form-control" id="inputContact" pattern="\d*" minlength="10" maxlength="10" required>
+						</div>
+						</div>
+						<div class="col-12">
+						<label for="inputPan" class="form-label">PAN</label>
+						<input type="text" class="form-control" id="inputPan" oninput="makeUppercase(this)" minlength="10" maxlength="10" required>
+						</div>
+						<div class="col-12"></div>
+						<div class="col-12"></div>
+						<div class="col-12">
+						<button type="submit" class="btn btn-primary d-flex flex-row-reverse">Pay Now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+	  <div class="modal-header">
+        <h5 class="modal-title">Thank You!</h5>
+      </div>
+      <div class="modal-body">
+        Thank you for stepping forward and helping!
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer class="container-fluid" id="footer">
+<p>&copy 2023 | Orphanage Name</p>
+</footer>
+
+<script src="donation.js"></script>
+</body>
+</html>

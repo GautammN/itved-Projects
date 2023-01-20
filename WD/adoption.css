@@ -1,0 +1,40 @@
+body{
+	background-image:url("https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?w=2000");
+}
+
+nav{
+	background-color:#AACB73;
+}
+
+.nav-link, .dropdown-item{
+	font-family:Josefin Sans, serif;
+	font-size:25px;
+	margin-right:20px;	
+}
+
+.navbar-brand{
+	font-family:Kavoon, serif;
+	margin-right:50px;
+}
+
+#contactOption{
+	background-color:#f8f9fa;
+}
+
+#registerSuccessModal.show {
+  display: block;
+}
+
+.modal-body{
+	text-align:center;
+}
+
+#footer{
+	height:30px;
+	background-color:#AACB73;
+	text-align:center;
+}
+
+
+
+

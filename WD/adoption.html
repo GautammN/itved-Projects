@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam|Kavoon|Josefin+Sans">
+	<link rel="stylesheet" href="adoption.css">
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">Orphanage Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        <a class="nav-link" href="adoption.html">Adoption Form</a>
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+            <li><a class="dropdown-item" href="gallery-video.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <a class="nav-link" href="donation.html">Donation & Support</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+
+<div class="container">
+<form class="row g-3" action="home.html">
+  <div class="col-md-4">
+    <label for="inputName" class="form-label">Name *</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Full Name" required>
+  </div>
+  <div class="col-md-4">
+    <label for="inputEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+  </div>
+  <div class="col-4">
+    <label for="inputContact" class="form-label">Contact</label>
+	<div class="input-group">
+	<span>
+	<select class="form-select" id="contactOption">
+		<option>+91</option>
+		<option>+96</option>
+	</select>
+	</span>
+	<input type="text" class="form-control" id="inputContact" pattern="\d*" maxlength="10">
+	</div>
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+		<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+		<option value="Assam">Assam</option>
+		<option value="Bihar">Bihar</option>
+		<option value="Chandigarh">Chandigarh</option>
+		<option value="Chhattisgarh">Chhattisgarh</option>
+		<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+		<option value="Daman and Diu">Daman and Diu</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Lakshadweep">Lakshadweep</option>
+		<option value="Puducherry">Puducherry</option>
+		<option value="Goa">Goa</option>
+		<option value="Gujarat">Gujarat</option>
+		<option value="Haryana">Haryana</option>
+		<option value="Himachal Pradesh">Himachal Pradesh</option>
+		<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+		<option value="Jharkhand">Jharkhand</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Kerala">Kerala</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Manipur">Manipur</option>
+		<option value="Meghalaya">Meghalaya</option>
+		<option value="Mizoram">Mizoram</option>
+		<option value="Nagaland">Nagaland</option>
+		<option value="Odisha">Odisha</option>
+		<option value="Punjab">Punjab</option>
+		<option value="Rajasthan">Rajasthan</option>
+		<option value="Sikkim">Sikkim</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Telangana">Telangana</option>
+		<option value="Tripura">Tripura</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="Uttarakhand">Uttarakhand</option>
+		<option value="West Bengal">West Bengal</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip" pattern="[0-9]{6}" maxlength="6">
+  </div>
+  <div class="col-md-4">
+    <label for="inputAge" class="form-label">Birth Date *</label>
+    <input type="date" class="form-control" id="inputAge" required>
+  </div>  <div class="col-md-4">
+    <label for="inputEducation" class="form-label">Education</label>
+    <input type="text" class="form-control" id="inputEducation" placeholder="B.E">
+  </div>  <div class="col-md-4">
+    <label for="inputOccupation" class="form-label">Occupation</label>
+    <input type="text" class="form-control" id="inputOccupation" placeholder="Job">
+  </div>   <div class="col-md-4">
+    <label for="inputIncome" class="form-label">Income(yearly)</label>
+    <input type="text" class="form-control" id="inputIncome" placeholder="1,00,000">
+  </div>   <div class="col-4">
+  </div>   <div class="col-4">
+  </div>   <div class="col-4">
+    <label class="form-label">Gender</label><br>
+    <input type="radio" class="btn-check" name="genderOptions" id="inputGenderMale" autocomplete="off" checked>
+	<label for="inputGenderMale" class="btn btn-outline-success">Male</label>
+    <input type="radio" class="btn-check" name="genderOptions" id="inputGenderFemale" autocomplete="off">
+	<label for="inputGenderFemale" class="btn btn-outline-success">Female</label>
+    <input type="radio" class="btn-check" name="genderOptions" id="inputGenderFemale" autocomplete="off">
+	<label for="inputGenderFemale" class="btn btn-outline-success">Other</label>
+  </div>   <div class="col-md-4">
+    <label for="inputMaritalStatus" class="form-label">Marital Status</label><br>
+    <input type="radio" class="btn-check" name="maritalStatusOptions" id="inputMaritalStatusYes" autocomplete="off" checked>
+	<label for="inputMaritalStatusYes" class="btn btn-outline-success">Yes</label>
+    <input type="radio" class="btn-check" name="maritalStatusOptions" id="inputMaritalStatusNo" autocomplete="off">
+	<label for="inputMaritalStatusNo" class="btn btn-outline-success">No</label>
+  </div>  <div class="col-md-4">
+  </div>  <div class="col-md-4">
+    <label for="inputSmoking" class="form-label">Smoking</label><br>
+    <input type="radio" class="btn-check" name="smokingOptions" id="inputSmokingYes" autocomplete="off" checked>
+	<label for="inputSmokingYes" class="btn btn-outline-success">Yes</label>
+    <input type="radio" class="btn-check" name="smokingOptions" id="inputSmokingNo" autocomplete="off">
+	<label for="inputSmokingNo" class="btn btn-outline-success">No</label>
+    <input type="radio" class="btn-check" name="smokingOptions" id="inputSmokingOccassional" autocomplete="off">
+	<label for="inputSmokingOccassional" class="btn btn-outline-success">Occassional</label>
+  </div>  <div class="col-md-4">
+    <label for="inputDrinking" class="form-label">Drinking</label><br>
+    <input type="radio" class="btn-check" name="drinkingOptions" id="inputDrinkingYes" autocomplete="off" checked>
+	<label for="inputDrinkingYes" class="btn btn-outline-success">Yes</label>
+    <input type="radio" class="btn-check" name="drinkingOptions" id="inputDrinkingNo" autocomplete="off">
+	<label for="inputDrinkingNo" class="btn btn-outline-success">No</label>
+    <input type="radio" class="btn-check" name="drinkingOptions" id="inputDrinkingOccassional" autocomplete="off">
+	<label for="inputDrinkingOccassional" class="btn btn-outline-success">Occassional</label>
+  </div>
+	<div class="col-12"></div>
+	<div class="col-12"></div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Request for Adoption</button>
+  </div>
+</form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="registerSuccessModal" tabindex="-1" aria-labelledby="registerSuccessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+	  <div class="modal-header">
+        <h5 class="modal-title">Registered Successfully!</h5>
+      </div>
+      <div class="modal-body">
+        We will soon contact you for further process.
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer class="container-fluid" id="footer">
+<p>&copy 2023 | Orphanage Name</p>
+</footer>
+
+<script src="adoption.js"></script>
+</body>
+</html>
